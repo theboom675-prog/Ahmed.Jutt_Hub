@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMED JUTT SERVICES</title>
+    <!-- Tailwind CSS for modern design -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .service-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="text-center py-16 px-4 border-b border-gray-800 bg-gradient-to-b from-gray-900 to-transparent">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-wide mb-4 gradient-text animate-pulse">
+            AHMED JUTT SERVICES
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+            Get High-Quality Social Media Boost & Premium Apps At The Best Prices In Pakistan.
+        </p>
+        <div class="mt-8">
+            <a href="#order" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                Place An Order
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Container -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <!-- TikTok Services -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <i class="fab fa-tiktok text-3xl text-pink-500"></i>
+                <h2 class="text-3xl font-bold border-b-2 border-pink-500 pb-2">TikTok Services</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card p-6 rounded-2xl relative">
+                    <h3 class="text-xl font-bold mb-2">TikTok Views</h3>
+                    <p class="text-gray-400 text-sm mb-4">Super Fast Delivery</p>
+                    <div class="text-2xl font-black text-green-400">Rs. 3 <span class="text-sm font-normal text-gray-400">/ per 1,000</span></div>
+                    <button onclick="selectService('TikTok Views (Rs. 3 per 1K)')" class="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-xl font-medium transition">Order Now</button>
+                </div>
+                <div class="service-card p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-2">TikTok Likes</h3>
+                    <p class="text-gray-400 text-sm mb-4">High Quality Likes</p>
+                    <div class="text-2xl font-black text-green-400">Rs. 120 <span class="text-sm font-normal text-gray-400">/ per 1,000</span></div>
+                    <button onclick="selectService('TikTok Likes (Rs. 120 per 1K)')" class="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-xl font-medium transition">Order Now</button>
+                </div>
+                <div class="service-card p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-2">TikTok Followers</h3>
+                    <p class="text-gray-400 text-sm mb-4">Stable Profiles</p>
+                    <div class="text-2xl font-black text-green-400">Rs. 800 <span class="text-sm font-normal text-gray-400">/ per 1,000</span></div>
+                    <button onclick="selectService('TikTok Followers (Rs. 800 per 1K)')" class="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-xl font-medium transition">Order Now</button>
+                </div>
+                <div class="service-card p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-2">TikTok Favorites</h3>
+                    <p class="text-gray-400 text-sm mb-4">Boost Ranking</p>
+                    <div class="text-2xl font-black text-green-400">Rs. 50 <span class="text-sm font-normal text-gray-400">/ per 1,000</span></div>
+                    <button onclick="selectService('TikTok Favorites (Rs. 50 per 1K)')" class="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-xl font-medium transition">Order Now</button>
+                </div>
+                <div class="service-card p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-2">TikTok Custom Comments</h3>
+                    <p class="text-red-400 text-xs font-semibold mb-4"><i class="fas fa-exclamation-circle"></i> Not Guaranteed</p>
+                    <div class="text-2xl font-black text-green-400">Rs. 800 <span class="text-sm font-normal text-gray-400">/ per 1,000</span></div>
+                    <button onclick="selectService('TikTok Custom Comments (Rs. 800 per 1K - No Guarantee)')" class="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-xl font-medium transition">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TikTok Country Accounts (Special Offer) -->
+        <section class="mb-16 bg-gradient-to-r from-purple-950 to-slate-900 p-8 rounded-3xl border border-purple-500/30">
+            <div class="flex items-center gap-3 mb-6">
+                <i class="fas fa-gift text-3xl text-yellow-400 animate-bounce"></i>
+                <h2 class="text-3xl font-bold text-yellow-400">Special Offers (TikTok Accounts)</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="service-card p-6 rounded-2xl bg-black/40 relative overflow-hidden">
+                    <span class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">Sale</span>
+                    <h3 class="text-xl font-bold mb-1">UK TikTok Account</h3>
+                    <p class="text-gray-400 text-sm mb-4">Beta Program Eligible</p>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gray-500 line-through text-lg">Rs. 800</span>
+                        <span class="text-2xl font-black text-green-400">Rs. 300</span>
+                    </div>
+                    <button onclick="selectService('UK TikTok Account (Rs. 300 Special Offer)')" class="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 rounded-xl transition">Claim Offer</button>
+                </div>
+                <div class="service-card p-6 rounded-2xl bg-black/40 relative overflow-hidden">
+                    <span class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">Sale</span>
+                    <h3 class="text-xl font-bold mb-1">France / Germany Account</h3>
+                    <p class="text-gray-400 text-sm mb-4">High Reach Region Accounts</p>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gray-500 line-through text-lg">Rs. 800</span>
+                        <span class="text-2xl font-black text-green-400">Rs. 300</span>
+                    </div>
+                    <button onclick="selectService('France/Germany TikTok Account (Rs. 300 Special Offer)')" class="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 rounded-xl transition">Claim Offer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram & Facebook Services -->
+        <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fab fa-instagram text-3xl text-purple-500"></i>
+                    <h2 class="text-2xl font-bold border-b-2 border-purple-500 pb-2">Instagram Services</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="service-card p-5 rounded-xl flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold">Instagram Likes</h4>
+                            <p class="text-green-400 font-bold text-sm">Rs. 120 / 1K</p>
+                        </div>
+                        <button onclick="selectService('Instagram Likes (Rs. 120 per 1K)')" class="bg-purple-600 hover:bg-purple-700 px-4 py-1.5 rounded-lg text-sm font-semibold transition">Order</button>
+                    </div>
+                    <div class="service-card p-5 rounded-xl flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold">Instagram Followers</h4>
+                            <p class="text-green-400 font-bold text-sm">Rs. 220 / 1K</p>
+                        </div>
+                        <button onclick="selectService('Instagram Followers (Rs. 220 per 1K)')" class="bg-purple-600 hover:bg-purple-700 px-4 py-1.5 rounded-lg text-sm font-semibold transition">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fab fa-facebook text-3xl text-blue-500"></i>
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2">Facebook Services</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="service-card p-5 rounded-xl flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold">Facebook Likes</h4>
+                            <p class="text-green-400 font-bold text-sm">Rs. 120 / 1K</p>
+                        </div>
+                        <button onclick="selectService('Facebook Likes (Rs. 120 per 1K)')" class="bg-blue-600 hover:bg-blue-700 px-4 py-1.5 rounded-lg text-sm font-semibold transition">Order</button>
+                    </div>
+                    <div class="service-card p-5 rounded-xl flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold">Facebook Followers</h4>
+                            <p class="text-green-400 font-bold text-sm">Rs. 300 / 1K</p>
+                        </div>
+                        <button onclick="selectService('Facebook Followers (Rs. 300 per 1K)')" class="bg-blue-600 hover:bg-blue-700 px-4 py-1.5 rounded-lg text-sm font-semibold transition">Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Apps & WhatsApp Deals -->
+        <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Premium Apps -->
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fas fa-mobile-alt text-3xl text-cyan-400"></i>
+                    <h2 class="text-2xl font-bold border-b-2 border-cyan-400 pb-2">Premium Apps (Pro Versions)</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="service-card p-4 rounded-xl flex justify-between items-center">
+                        <span class="font-medium"><i class="fas fa-video text-red-400 mr-2"></i> CapCut Pro</span>
+                        <span class="text-green-400 font-bold">Rs. 350 <button onclick="selectService('CapCut Pro (Rs. 350)')" class="ml-3 bg-cyan-600 text-white text-xs px-3 py-1 rounded hover:bg-cyan-700">Select</button></span>
+                    </div>
+                    <div class="service-card p-4 rounded-xl flex justify-between items-center">
+                        <span class="font-medium"><i class="fas fa-cut text-orange-400 mr-2"></i> InShot Pro</span>
+                        <span class="text-green-400 font-bold">Rs. 350 <button onclick="selectService('InShot Pro (Rs. 350)')" class="ml-3 bg-cyan-600 text-white text-xs px-3 py-1 rounded hover:bg-cyan-700">Select</button></span>
+                    </div>
+                    <div class="service-card p-4 rounded-xl flex justify-between items-center">
+                        <span class="font-medium"><i class="fas fa-magic text-purple-400 mr-2"></i> Wink Pro</span>
+                        <span class="text-green-400 font-bold">Rs. 400 <button onclick="selectService('Wink Pro (Rs. 400)')" class="ml-3 bg-cyan-600 text-white text-xs px-3 py-1 rounded hover:bg-cyan-700">Select</button></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp Deals -->
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fab fa-whatsapp text-3xl text-green-500"></i>
+                    <h2 class="text-2xl font-bold border-b-2 border-green-500 pb-2">WhatsApp Channel Deals</h2>
+                </div>
+                <div class="service-card p-6 rounded-2xl h-full flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">WhatsApp Followers & Auto Reactions</h4>
+                        <p class="text-gray-400 text-sm mb-4">For personalized channel deals, rates, and automated reaction setup, connect directly with Ahmed Jutt.</p>
+                    </div>
+                    <!-- यहाँ आप अपना व्हाट्सएप लिंक डाल सकते हैं -->
+                    <a href="https://wa.me/923000000000?text=Hi%20Ahmed%20Jutt,%20I%20want%20to%20deal%20for%20WhatsApp%20Followers/Reactions" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> Direct Deal On WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-12">
+
+        <!-- Order & Payment Section -->
+        <section id="order" class="max-w-2xl mx-auto bg-gray-900/50 p-8 rounded-3xl border border-gray-800">
+            <h2 class="text-3xl font-bold text-center mb-2">Checkout Details</h2>
+            <p class="text-center text-gray-400 text-sm mb-8">Follow the instructions to complete your payment and send details.</p>
+
+            <!-- Payment Method Card -->
+            <div class="bg-gradient-to-r from-amber-600 to-amber-800 p-6 rounded-2xl mb-8 shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="font-bold text-xl uppercase tracking-wider"><i class="fas fa-university mr-2"></i> JazzCash Payment</span>
+                    <span class="bg-black/30 text-xs px-3 py-1 rounded-full text-white font-semibold">Active</span>
+                </div>
+                <p class="text-sm text-amber-100 mb-2">Please send the exact amount to the following JazzCash Account:</p>
+                <!-- यहाँ अपना सही नंबर और नाम लिख लें -->
+                <div class="text-2xl font-mono font-black text-white bg-black/20 p-3 rounded-xl text-center mb-3">
+                    0300-1234567
+                </div>
+                <div class="text-sm text-amber-200 text-center font-medium">Account Title: AHMED JUTT</div>
+            </div>
+
+            <!-- Order Form -->
+            <form onsubmit="sendToWhatsApp(event)" class="space-y-5">
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-300">Your Name</label>
+                    <input type="text" id="buyer-name" required placeholder="Enter your full name" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-300">Selected Service</label>
+                    <input type="text" id="selected-service" required placeholder="Click 'Order Now' above or type here" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-300">Quantity / Details</label>
+                    <input type="text" id="order-qty" required placeholder="e.g., 2000 Followers, 1 Year Account" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-300">Target Profile Link / Username</label>
+                    <input type="text" id="target-link" required placeholder="Paste account or video link here" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="p-4 bg-blue-950/40 rounded-xl border border-blue-500/20 text-xs text-blue-300">
+                    <i class="fas fa-info-circle mr-1"></i> Form submit करते ही यह सारी डिटेल्स आपके WhatsApp चैट पर लोड हो जाएंगी। वहां आपको बस JazzCash पेमेंट का स्क्रीनशॉट साथ अटैच करना होगा।
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg text-lg">
+                    Submit Order via WhatsApp
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-sm text-gray-600 border-t border-gray-900 mt-12">
+        &copy; 2026 AHMED JUTT SERVICES. All Rights Reserved.
+    </footer>
+
+    <!-- JavaScript Functions -->
+    <script>
+        // Function to auto-select service name into input field and scroll down
+        function selectService(serviceName) {
+            document.getElementById('selected-service').value = serviceName;
+            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Function to create WhatsApp URL from form data
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            // अपना सही व्हाट्सएप नंबर यहाँ डालें (बिना '+' या '00' के, जैसे: 923001234567)
+            const myWhatsAppNumber = "923436127331"; 
+            
+            const name = document.getElementById('buyer-name').value;
+            const service = document.getElementById('selected-service').value;
+            const qty = document.getElementById('order-qty').value;
+            const link = document.getElementById('target-link').value;
+            
+            const message = `*NEW ORDER - AHMED JUTT SERVICES*%0A%0A` +
+                            `*Name:* ${Ahmed Jutt}%0A` +
+                            `*Service:* ${service}%0A` +
+                            `*Quantity:* ${qty}%0A` +
+                            `*Link:* ${link}%0A%0A` +
+                            `_Note: I am sending the JazzCash payment screenshot next._`;
+            
+            window.open(`https://wa.me/${myWhatsAppNumber}?text=${message}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
