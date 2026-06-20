@@ -2,6 +2,128 @@
 <html lang="en">
 <head>
     <style>
+        /* کلر ویری ایبلز اور گلوبل سیٹنگز */
+:root {
+    --bg-main: #0b0f19;       /* گہرا کالا/نیلا بیک گراؤنڈ */
+    --bg-card: #151c2c;       /* پروڈکٹ کارڈز کا رنگ */
+    --accent-blue: #00d2ff;   /* برائٹ نیلا رنگ */
+    --accent-purple: #7928ca; /* وی آئی پی ٹچ کے لیے پرپل رنگ */
+    --text-main: #ffffff;     /* مین ٹیکسٹ */
+    --text-muted: #8a99ad;    /* ہلکا ٹیکسٹ */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ہیڈر / ٹائٹل */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* پروڈکٹ گریڈ جو لے آؤٹ کو خراب ہونے سے بچائے گا */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* پروڈکٹ کارڈ کا وی آئی پی ڈیزائن */
+.product-card {
+    background: var(--bg-card);
+    border: 1px solid #222f47;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ہور ایفیکٹ (جب ماؤس کارڈ پر جائے) */
+.product-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
+}
+
+/* پروڈکٹ امیج کی سیٹنگ تاکہ وہ اپنی جگہ سے نہ ہلے */
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* امیج کو خراب یا سٹریچ ہونے سے بچاتا ہے */
+    border-bottom: 1px solid #222f47;
+    background-color: #070a12;
+}
+
+/* پروڈکٹ کی تفصیلات */
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    color: var(--accent-blue);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* چمکتا ہوا وی آئی پی بٹن */
+.buy-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, var(--accent-blue), #0086ad);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(45deg, #0086ad, var(--accent-blue));
+    transform: scale(1.02);
+}
+        
 /* Ahmed Jutt Services */
 :root {
   --vip-bg: #0a0a0a;
