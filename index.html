@@ -1,6 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+/* Ahmed Jutt Services */
+:root {
+  --vip-bg: #0a0a0a;
+  --vip-card: #151515;
+  --vip-border: #25D366;
+  --vip-text: #e0e0e0;
+  --vip-pink: #c2185b;
+  --vip-shadow: rgba(37, 211, 102, 0.2);
+}
+
+body {
+  background: var(--vip-bg);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--vip-text);
+  margin: 0;
+  padding: 20px;
+  direction: rtl;
+}
+
+/* VIP کارڈ ڈیزائن */
+.vip-card {
+  max-width: 380px;
+  margin: 20px auto;
+  background: var(--vip-card);
+  border: 2px solid var(--vip-border);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px var(--vip-shadow);
+  transition: 0.3s;
+  position: relative;
+}
+
+.vip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4);
+}
+
+/* اوپر گلو ایفیکٹ */
+.vip-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #25D366, #c2185b, #25D366);
+}
+
+/* تصویر */
+.vip-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* VIP بیج */
+.vip-badge {
+  position: absolute;
+  top: 15px;
+  left: -35px;
+  background: var(--vip-pink);
+  color: white;
+  padding: 6px 45px;
+  transform: rotate(-45deg);
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+/* کنٹینٹ */
+.vip-content {
+  padding: 20px;
+  text-align: right;
+}
+
+.vip-title {
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.vip-desc {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* پرائس باکس */
+.vip-price-box {
+  background: #1e1e1e;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #2a2a2a;
+}
+
+.vip-price {
+  font-size: 26px;
+  color: var(--vip-pink);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Author */
+.vip-author {
+  background: #1a1a1a;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* WhatsApp بٹن */
+.vip-btn {
+  display: block;
+  background: linear-gradient(90deg, #25D366, #128C7E);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+}
+
+.vip-btn:hover {
+  background: linear-gradient(90deg, #128C7E, #25D366);
+  box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+}
+</style>
+
+<!-- استعمال کا طریقہ -->
+<div class="vip-card">
+  <div class="vip-badge">NEW</div>
+  <img src="https://i.postimg.cc/hGFWm4tp/IMG-20260620-WA0047.jpg" class="vip-img" alt="Service">
+  <div class="vip-content">
+    <h3 class="vip-title">TikTok Views Pakistani</h3>
+    <p class="vip-desc">ہائی کوالٹی + نان ڈراپ<br>ڈلیوری: 5-10 منٹ</p>
+    <div class="vip-price-box">
+      <p><strong>کوانٹٹی:</strong> 1000 Views</p>
+      <p class="vip-price">صرف 12 روپے</p>
+    </div>
+    <div class="vip-author"><strong>Author By:</strong> ATHER BHAI</div>
+    <a href="https://wa.me/923436127331?text=Order%20karna%20hai" target="_blank" class="vip-btn">📲 Order Now</a>
+  </div>
+</div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ather+JUTT SERVICES</title>
@@ -91,11 +247,11 @@
 
     <div style="background: #f5f5f5; padding: 8px; border-radius: 6px; margin-bottom: 14px; text-align: center;">
       <p style="margin: 0; font-size: 13px; color: #333;">
-        <strong>Author By:</strong> ATHER BHAI
+        <strong>Contact with:</strong> ATHER BHAI
       </p>
     </div>
 
-    <a href="https://wa.me/923436127331?text=Assalamu%20Alaikum%20ATHER%20BHAI%2C%20TikTok%20Account%20Buy%2FSale%20karna%20hai.%20Details%20bhej%20dain" 
+    <a href="https://wa.me/923079604268?text=Assalamu%20Alaikum%20ATHER%20BHAI%2C%20TikTok%20Account%20Buy%2FSale%20karna%20hai.%20Details%20bhej%20dain" 
        target="_blank" 
        style="display: block; background: #25D366; color: white; padding: 15px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 18px; text-align: center; box-shadow: 0 4
   
